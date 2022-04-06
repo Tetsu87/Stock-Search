@@ -11,7 +11,9 @@ https://user-images.githubusercontent.com/88815405/161934935-3bae381f-a213-4281-
 
 ## Stock Search Architecture
 HTML5, Bootstrap, and Angular on the client-side
+<br>
 NodeJS/Express on the server-side
+<br>
 Google App Engine for hosting both the client-side and server-side
 
 
