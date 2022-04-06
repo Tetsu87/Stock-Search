@@ -14,7 +14,7 @@ HTML5, Bootstrap, and Angular on the client-side
 <br>
 NodeJS/Express on the server-side
 <br>
-Google App Engine for hosting both the client-side and server-side
+Google App Engine as a server
 
 
 ## Codes are available upon request
