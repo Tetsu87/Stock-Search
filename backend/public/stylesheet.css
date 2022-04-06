@@ -1,0 +1,13 @@
+body {
+   background-image: url(img/background-graph.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   min-width: 100vh;
+   height: 250px;
+}
+
+
+nav{
+   display: flex;
+}

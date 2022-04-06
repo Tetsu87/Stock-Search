@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Stock Search2</title>
+   <link rel = "stylesheet" href= "stylesheet.css">
+</head>
+<body>
+
+   <header>
+      <nav>
+            <div class = "element">Stock Search</div>
+            <!-- <div class = "element"><a href="aaa" target="_blank">Search</a></div>
+            <div class = "element"><a href="bbb" target="_blank">Watchlist</a></div>
+            <div class = "element"><a href="ccc" target="_blank">Portfolio</a></div> -->
+      </nav>
+   </header>
+
+   <form method="GET" id="test" autocomplete="off">
+      <div class="ticker-input">
+         <input required type="text" class="input-area" name="ticker" id="formInput" placeholder="Enter Stock Ticker Symbol">
+         <!-- <button id="submit-button" type="submit"><img src="ddd"></button>
+          <button id="clear-button"><img src="eee"></button> -->
+      </div>
+  </form>
+
+  <div id="switch">
+        <div class="area">
+            <div class="bar"></div>
+            <input type="radio" name="tab_name" id="tab1" checked>
+            <label class="tab_class" for="tab1">Company</label>
+            <div class="content_class">
+                <img id="logo">
+                <div class="left_right_manager">
+                    <div class=left_content>
+                        <ul>
+                            <li>Company Name</li>
+                            <li>Stock Ticker Symbol</li>
+                            <li>Stock Exchange Code</li>
+                            <li>Company Start Date</li>
+                            <li>Category</li>
+                        </ul>
+                    </div>
+                    <div class="right_content">
+                        <ul>
+                            <li id="Company-Name"></li>
+                            <li id="Stock-Ticker-Symbol"></li>
+                            <li id="Stock-Exchange-Code"></li>
+                            <li id="Company-Start-Date"></li>
+                            <li id="Category"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <input type="radio" name="tab_name" id="tab2">
+            <label class="tab_class" for="tab2">Stock Summary</label>
+            <div class="content_class">
+                <div class="left_right_manager">
+                    <div class=left_content_2>
+                        <ul>
+                            <li>Stock Ticker Symbol</li>
+                            <li>Trading Day</li>
+                            <li>Previous Closing Price</li>
+                            <li>Opening Price</li>
+                            <li>High Price</li>
+                            <li>Low Price</li>
+                            <li>Change</li>
+                            <li>Change Percent</li>
+                        </ul>
+                    </div>
+                    <div class="right_content_2">
+                        <ul>
+                            <li id=Stock-Ticker-Symbol2></li>
+                            <li id=Trading-Day></li>
+                            <li id=Previous-Closing-Price></li>
+                            <li id=Opening-Price></li>
+                            <li id=High-Price></li>
+                            <li id=Low-Price></li>
+                            <li><span id="Change"></span><span id="arrow1">&#10148;</span></li>
+                            <li><span id="Change-Percent"></span><span id="arrow2">&#10148;</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="indicator">
+                    <div class=indicator_property>
+                        <div class="left_text">Strong <br>Sell</div>
+                        <div class="strongSell"></div>
+                        <div class="sell"></div>
+                        <div class="hold"></div>
+                        <div class="buy"></div>
+                        <div class="strongBuy"></div>
+                        <div class="right_text">Strong <br>Buy</div>
+                    </div>
+                </div>
+                <div class="recommend">Recommendation Trends</div>
+            </div>
+
+            <input type="radio" name="tab_name" id="tab3">
+            <label class="tab_class" for="tab3">Charts</label>
+            <div class="content_class">
+                <div id="container"></div>
+            </div>
+
+            <input type="radio" name="tab_name" id="tab4">
+            <label class="tab_class" for="tab4">Latest News</label>
+            <div class="content_class">
+                <div class="news">
+                    <img id="logo1">
+                    <div class=news_content>
+                        <div id="Title1">title1</div>
+                        <div id="Date1">date1</div>
+                        <div><a id="Link1" target="_blank">See Original Post</a></div>
+                    </div>
+                </div>
+                <div class="news">
+                    <img id="logo2">
+                    <div class=news_content>
+                        <div id="Title2">title2</div>
+                        <div id="Date2">date2</div>
+                        <div><a id="Link2" target="_blank">See Original Post</a></div>
+                    </div>
+                </div>
+                <div class="news">
+                    <img id="logo3">
+                    <div class=news_content>
+                        <div id="Title3">title3</div>
+                        <div id="Date3">date3</div>
+                        <div><a id="Link3" target="_blank">See Original Post</a></div>
+                    </div>
+                </div>
+                <div class="news">
+                    <img id="logo4">
+                    <div class=news_content>
+                        <div id="Title4">title4</div>
+                        <div id="Date4">date4</div>
+                        <div><a id="Link4" target="_blank">See Original Post</a></div>
+                    </div>
+                </div>
+                <div class="news">
+                    <img id="logo5">
+                    <div class=news_content>
+                        <div id="Title5">title5</div>
+                        <div id="Date5">date5</div>
+                        <div><a id="Link5" target="_blank">See Original Post</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <footer>
+      <p>Powered by Finnhub.io</p>
+   </footer>
+</body>
+</html>

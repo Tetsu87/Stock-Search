@@ -1,0 +1,32 @@
+<NAV>
+@ Searchを初期状態で白強調
+
+<フォーム>
+@ validation1 : No data found, Please enter a valid ticker
+@ validation2 : Please enter a valid ticker
+
+<Modal>
+@ buy sell stock, modal from portfolio
+@ sell stock from home, modal
+
+<非同期通信>
+
+<ニュース>
+@ news modal, facebook/twitter連携
+
+<watchlist>
+@ 対象株式が無い時の初期画面設定
+
+<ポートフォリオ>
+@ 対象株式が無い時の初期画面設定
+
+<チャート>
+@ charts summary : hourly price variation 
+
+<PEER>
+@ Peerクリック時に、それを検索結果として非同期通信
+
+<見た目>
+@ footer：スクロール時に消える様にする
+@ background imageが途切れる
+@ RWD

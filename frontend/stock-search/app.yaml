@@ -1,0 +1,8 @@
+runtime: nodejs16
+
+handlers:
+- url: /
+  static_files: dist/stock-search/index.html
+  upload: dist/stock-search/index.html
+- url: /
+  static_dir: dist/stock-search
