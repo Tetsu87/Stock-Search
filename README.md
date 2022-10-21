@@ -16,5 +16,3 @@ NodeJS/Express on the server-side
 <br>
 Google App Engine as a server
 
-
-## Codes are available upon request
