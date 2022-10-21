@@ -1,0 +1,38 @@
+export const recommendationTrends = [
+  {
+    buy: 13,
+    hold: 11,
+    period: '2022-03-01',
+    sell: 7,
+    strongBuy: 14,
+    strongSell: 4,
+    symbol: 'TSLA',
+  },
+  {
+    buy: 11,
+    hold: 13,
+    period: '2022-02-01',
+    sell: 7,
+    strongBuy: 13,
+    strongSell: 4,
+    symbol: 'TSLA',
+  },
+  {
+    buy: 9,
+    hold: 15,
+    period: '2022-01-01',
+    sell: 6,
+    strongBuy: 13,
+    strongSell: 4,
+    symbol: 'TSLA',
+  },
+  {
+    buy: 9,
+    hold: 14,
+    period: '2021-12-01',
+    sell: 6,
+    strongBuy: 12,
+    strongSell: 4,
+    symbol: 'TSLA',
+  },
+];

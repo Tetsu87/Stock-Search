@@ -1,0 +1,17 @@
+.my-background {
+   background-color: #e9ecef;
+   border-bottom: lightgray solid 1.5px;
+}
+
+.my-background:nth-child(1),.my-background:nth-child(2) {
+   border-top: lightgray solid 1px;
+}
+
+.my-background2 {
+   border-bottom: lightgray solid 1px;
+}
+
+.wrapper {
+   display: flex;
+   justify-content: space-around;
+}

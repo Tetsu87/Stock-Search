@@ -1,0 +1,20 @@
+.navbar-color {
+   background-color: #282c9c;
+}
+
+.navbar-right-end {
+   flex-grow: 0;
+}
+
+.nav-link-right-end {
+   text-align: right;
+}
+
+.selected {
+   border: white solid 1px;
+   border-radius: 15px;
+}
+
+/* .selected-color {
+   color:red important!;
+}  */

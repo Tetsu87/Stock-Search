@@ -1,0 +1,48 @@
+<div class="card">
+  <div class="card-body body-border-bottom">
+    <div class="body-wrapper">
+      <h4>{{ article.source }}</h4>
+
+      <button type="button" class="close-btn" (click)="closeModal()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="black"
+          class="bi bi-x align-top"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+          />
+        </svg>
+      </button>
+    </div>
+    <h6 class="date-color">{{ article.datetime * 1000 | date: "longDate" }}</h6>
+  </div>
+
+  <div class="card-body">
+    <h6 class="card-title">{{ article.headline }}</h6>
+    <div class="card-text summary-font">{{ article.summary }}</div>
+    <div class="detail-color detail-font">
+      For more details click
+      <span><a href="{{ article.url }}" target="_blank"> here </a></span>
+    </div>
+  </div>
+
+  <div class="card-body square-body rounded">
+    <div class="share-font">Share</div>
+    <div class="icon-wrapper">
+      <div>
+        <a class="twitter-share-btn my-2" [href]="getTwitterUrl()" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+      </div>
+      <div>
+        <a class="fb-share-btn m-2" [href]="getFacebookUrl()" target="_blank">
+          <i class="fa-brands fa-facebook-square"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

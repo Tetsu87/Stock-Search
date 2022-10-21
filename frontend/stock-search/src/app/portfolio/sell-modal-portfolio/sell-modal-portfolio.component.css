@@ -1,0 +1,11 @@
+.btn-sell {
+   background-color: #2eb23a;
+   color: white;
+ }
+
+ .close-btn {
+  background-color: white;
+  border: none;
+  width: 20px;
+  padding: 0;
+}

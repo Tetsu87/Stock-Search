@@ -1,0 +1,140 @@
+.container {
+   margin-top: 50px;
+ }
+
+ .title {
+   font-size: 40px;
+ }
+
+.nav-tabs .nav-link{
+  border:none;
+}
+
+.nav-tabs .nav-link.active{
+  border-bottom: solid blue 3px;
+}
+
+a {
+  color: gray;
+}
+
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: black;
+}
+
+.nav-link:focus {
+  color:black;
+}
+/* .nav-link:focus, .nav-link:hover {
+  color:black;
+} */
+.nav-link:hover {
+  color: gray;
+}
+
+.center {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%) ;
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  margin-top: 5%;
+}
+/* 
+.center {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+} */
+
+.container {
+  margin-top: 100px;
+}
+
+/* .title {
+  font-size: 40px;
+} */
+
+input {
+  border-top: blue solid 3px;
+  border-left: blue solid 3px;
+  border-bottom: blue solid 3px;
+  border-radius: 25px 0 0 25px;
+}
+
+input:focus {
+  background-color: white;
+}
+
+.form-control-update {
+  box-shadow: none;
+  background-color: white;
+}
+
+.form-control-update:focus {
+  background-color: white;
+  border-color: blue;
+}
+
+.search-btn {
+  border-left: none;
+  border-top: blue solid 3px;
+  border-bottom: blue solid 3px;
+  background-color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+/* .clear-btn-area {
+} */
+
+.clear-btn {
+  /* width: 51px;
+  height: 51px; */
+  /* width: 30px;
+  height: 30px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px; */
+
+  border-top: blue solid 3px;
+  border-right: blue solid 3px;
+  border-left: none;
+  border-bottom: blue solid 3px;
+  border-radius: 0 25px 25px 0;
+  background-color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+
+.apiLimitReached {
+  background-color: #f9d7d8;
+  font-size: 16px;
+}
+
+.noDataFound {
+  background-color: #f9d7d8;
+  font-size: 16px;
+}
+
+.invalidTicker {
+  background-color: #f9d7d8;
+  font-size: 16px;
+}
+
+.myDisplay {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.displayOffBtn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+}

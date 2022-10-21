@@ -1,0 +1,62 @@
+<ng-template #content let-modal>
+   <div class="modal-header">
+     <!-- <h4 class="modal-title" id="modal-basic-title">{{ticker}} </h4> -->
+     <p>{{ ticker }}</p>
+     <button
+       type="button"
+       class="btn-close"
+       aria-label="Close"
+       (click)="modal.dismiss('Cross click')"
+     ></button>
+   </div>
+ 
+   <div class="modal-body">
+     <div class="mb-3">
+       <div>
+         Current Price: <span> {{ currentPrice | number: "1.2-2" }} </span>
+       </div>
+       <div>
+         Money in Wallet: $ <span> {{ moneyInWallet | number: "1.2-2" }} </span>
+       </div>
+       <div class="input-group">
+         <form>
+           <div>
+             Quantity
+             <input
+               type="number"
+               name="amount"
+               min="0"
+               step="1"
+               [(ngModel)]="quantity"
+             />
+           </div>
+         </form>
+       </div>
+       <div *ngIf="currentQuantity < quantity" class="my-sell-alert">
+         You cannot sell the stocks that you don't have!
+       </div>
+     </div>
+   </div>
+ 
+   <div class="modal-footer justify-content-between">
+       <div class="total">
+         Total: <span> {{ quantity * currentPrice | number: "1.2-2" }} </span>
+       </div>
+       <div class="my-btn">
+         <button
+           type="button"
+           class="btn btn-sell"
+           (click)="modal.close()"
+           (click)="sellStock()"
+           [ngClass]="quantity ===0 || currentQuantity < quantity || quantity ===0? 'disabled':''"
+         >
+           Sell
+         </button>
+       </div>
+   </div>
+ </ng-template>
+ 
+ <button type="button" class="btn btn-sell" (click)="open(content)">Sell</button>
+ 
+
+ 

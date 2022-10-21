@@ -1,0 +1,18 @@
+.btn-sell {
+   background-color: #cb1c3b;
+   color: white;
+ }
+ 
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
+   opacity: 1;
+ }
+ 
+ .wrapper {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .my-sell-alert {
+   color: #a85362;
+ }

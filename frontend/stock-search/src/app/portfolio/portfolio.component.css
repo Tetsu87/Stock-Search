@@ -1,0 +1,99 @@
+p {
+  margin-bottom: 0;
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  border: lightgray solid 1px;
+  background-color: #f7f7f7;
+}
+
+.ticker {
+  font-size: 40px;
+  padding-right: 10px;
+  padding-bottom: 0;
+}
+
+.name {
+  font-size: 24px;
+  padding-bottom: 7px;
+  color: darkgray;
+}
+
+.portfolio {
+  background-color: white;
+}
+
+.positiveNumber {
+   color: green;
+ }
+ 
+ .negativeNumber {
+   color: red;
+ }
+
+.positiveNumberTriangle {
+   color: green;
+   transform: rotate(135deg);
+   font-size: 12px;
+   display: inline-block;
+   margin-top: 12px;
+ }
+ 
+ .negativeNumberTriangle {
+   color: red;
+   transform: rotate(315deg);
+   font-size: 12px;
+   display: inline-block;
+ }
+
+ .info {
+   border-right: lightgray solid 1px;
+   border-left: lightgray solid 1px;
+   background-color: white;
+ }
+
+ .buy-sell {
+   display: flex;
+   justify-content:flex-end ;
+   border: lightgray solid 1px;
+   background-color: #f7f7f7;
+ }
+
+ /* .btn-buy {
+  background-color: #28a745;
+  color: white;
+} */
+
+.btn-sell {
+  /* background-color: blue;
+  color: white; */
+  margin-left: 10px;
+}
+
+.myDisplay {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.displayStockBoughtInPortfolio {
+  background-color: #d5edda;
+  font-size: 16px;
+}
+.displayStockSoldInPortfolio {
+  background-color: #f9d7d8;
+  font-size: 16px;
+}
+
+.zeroStockAlert {
+  background-color:#fef3c9;
+}
+
+.displayOffBtn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+}

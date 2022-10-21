@@ -1,0 +1,23 @@
+<div class="row justify-content-evenly cursorToPointer">
+  <div
+    class="card m-3 p-3 cursorToPointer"
+    style="max-width: 540px"
+    *ngFor="let article of news | slice: 0:20"
+    (click)="openModal(article)"
+  >
+    <div class="row g-0 cursorToPointer">
+      <div class="col-md-4">
+        <img
+          src="{{ article.image }}"
+          class="img-fluid rounded-start"
+          alt="..."
+        />
+      </div>
+      <div class="col-md-8 cursorToPointer">
+        <div class="card-body">
+          <p class="card-text">{{ article.headline }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

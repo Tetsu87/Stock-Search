@@ -1,0 +1,72 @@
+<div class="text-center py-2">
+  <h3>Social Sentiments</h3>
+</div>
+<!-- col col-sm-6 -->
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6 col-sm-3 text-center py-2 my-background">
+      {{ descriptions?.name }}
+    </div>
+    <div class="col-6 col-sm-3 text-center py-2 my-background">
+      <div class="wrapper">
+        <div>Reddit</div>
+        <div>Twitter</div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-6 col-sm-3 text-center py-2 my-background">Total Mentions</div>
+    <div class="col-6 col-sm-3 text-center py-2 my-background2">
+      <div class="wrapper">
+        <div>{{ totalMentionReddit }}</div>
+        <div>{{ totalMentionTwitter }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-6 col-sm-3 text-center py-2 my-background text-nowrap">Positive Mentinos</div>
+    <div class="col-6 col-sm-3 text-center py-2 my-background2">
+      <div class="wrapper">
+        <div>{{ positiveMentionReddit }}</div>
+        <div>{{ positiveMentionTwitter }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-6 col-sm-3 text-center py-2 my-background text-nowrap">Negative Mentions</div>
+    <div class="col-6 col-sm-3 text-center py-2 my-background2">
+      <div class="wrapper">
+        <div>{{ negativeMentionReddit }}</div>
+        <div>{{ negativeMentionTwitter }}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-6">
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [constructorType]="'stockChart'" 
+        [options]="trendChartOptions"
+        style="width: 100%; height: 400px; display: block"
+        ></highcharts-chart>
+      <!-- <app-trend-chart
+        [trendChartOptions]="trendChartOptions"
+      ></app-trend-chart> -->
+    </div>
+    <div class="col-sm-6">
+      <highcharts-chart
+        [Highcharts]="Highcharts"
+        [constructorType]="'stockChart'" 
+        [options]="epsChartOptions"
+        style="width: 100%; height: 400px; display: block"
+        ></highcharts-chart>
+      <!-- <app-eps-chart
+        [epsChartOptions]="epsChartOptions"
+      ></app-eps-chart> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+.btn-buy {
+  background-color: #28a745;
+  color: white;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-buy-alert {
+  color: #a55d68;
+}

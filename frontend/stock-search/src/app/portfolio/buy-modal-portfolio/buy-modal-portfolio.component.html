@@ -1,0 +1,61 @@
+<ng-template #content let-modal>
+   <div class="modal-header">
+     <!-- <h4 class="modal-title" id="modal-basic-title">{{ticker}} </h4> -->
+     <p>{{ ticker }}</p>
+     <button
+       type="button"
+       class="btn-close close-btn"
+       aria-label="Close"
+       (click)="modal.dismiss('Cross click')"
+     ></button>
+   </div>
+ 
+   <div class="modal-body">
+     <div class="mb-3">
+       <div>
+         Current Price: <span> {{ currentPrice | number: "1.2-2" }} </span>
+       </div>
+       <div>
+         Money in Wallet:  <span> ${{ moneyInWalletStr }} </span>
+       </div>
+       <div class="input-group">
+         <form>
+           <div>
+             Quantity
+             <input
+               type="number"
+               name="amount"
+               min="0"
+               step="1"
+               [(ngModel)]="quantity"
+               />
+             </div>
+           </form>
+         </div>
+         <div *ngIf="moneyInWallet < quantity * currentPrice " class="my-buy-alert">
+           Not enough money in wallet!
+         </div>
+       </div>
+   </div>
+ 
+   <div class="modal-footer justify-content-between">
+       <div class="total">
+         Total: <span> {{ quantity * currentPrice | number: "1.2-2" }} </span>
+       </div>
+       <div class="my-btn">
+         <button
+           type="button"
+           class="btn btn-buy"
+           (click)="modal.close()"
+           (click)="buyStock()"
+           [ngClass]="moneyInWallet < quantity * currentPrice || quantity ===0 ? 'disabled':''"
+         >
+           Buy
+         </button>
+       </div>
+   </div>
+ </ng-template>
+ 
+ <button type="button" class="btn btn-primary my-2" (click)="open(content)">Buy</button>
+ 
+ 

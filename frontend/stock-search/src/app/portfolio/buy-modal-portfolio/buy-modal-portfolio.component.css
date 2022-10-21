@@ -1,0 +1,11 @@
+.btn-buy {
+   background-color: #28a745;
+   color: white;
+ }
+
+ .close-btn {
+  background-color: white;
+  border: none;
+  width: 20px;
+  padding: 0;
+}

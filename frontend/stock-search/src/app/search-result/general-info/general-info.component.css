@@ -1,0 +1,138 @@
+.container {
+  margin-top: 50px;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.registered {
+   fill: yellow;
+   stroke: yellow;
+}
+
+.not-registered {
+  fill:white;
+  stroke: black;
+}
+
+.myDisplay {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.displayWatchlistAdded {
+  background-color: #d5edda;
+  font-size: 16px;
+}
+
+.displayWatchlistRemoved {
+  background-color: #f9d7d8;
+  font-size: 16px;
+}
+
+.displayStockBought {
+  background-color: #d5edda;
+  font-size: 16px;
+}
+.displayStockSold {
+  background-color: #f9d7d8;
+  font-size: 16px;
+}
+
+.displayOffBtn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+}
+
+.toRight {
+  justify-content: flex-end;
+}
+
+.btn-buy {
+  background-color: #28a745;
+  color: white;
+}
+
+.company-name {
+  color: #7b838a;
+}
+
+.company-exchange {
+  font-size: 16px;
+  letter-spacing: -1px;
+}
+
+#logo{
+  width: 50px;
+}
+
+@media screen and (min-width: 768px){
+  #logo {
+   width: 100px;
+  }
+}
+
+.market-open {
+  color: green;
+  font-size: 16px;
+}
+
+.market-close {
+  color: red;
+  font-size: 16px;
+}
+
+.positiveNumber {
+  color: green;
+}
+
+.negativeNumber {
+  color: red;
+}
+
+.displayDate {
+  font-size: 12px;
+}
+
+.diff {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.diffNumber {
+  padding-left: 10px;
+}
+
+.positiveNumberTriangle {
+  color: green;
+  transform: rotate(135deg);
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.negativeNumberTriangle {
+  color: red;
+  transform: rotate(315deg);
+  font-size: 12px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px){
+  .desktop-hidden {
+   display: none;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .mobile-hidden {
+   display: none;
+  }
+}

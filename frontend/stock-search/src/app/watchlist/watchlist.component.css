@@ -1,0 +1,83 @@
+/* .title {
+   margin-top: 150px;
+} */
+
+.watchlist{
+   border: lightgray solid 1px;
+}
+
+.btn-close{
+   width: 12px;
+   height: 12px;
+}
+
+.remove-btn {
+   background-color: white;
+   border: none;
+   width: 30px;
+   padding: 0;
+}
+.common {
+   background-color: white;
+}
+
+.ticker,.price {
+   font-size: 40px;
+}
+
+.name,.change{
+   font-size: 24px;
+}
+
+
+
+.positiveNumber {
+   color: green;
+ }
+ 
+ .negativeNumber {
+   color: red;
+ }
+
+.btn-close:focus,
+.btn-close:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.positiveNumberTriangle {
+   color: green;
+   transform: rotate(135deg);
+   font-size: 12px;
+   display: inline-block;
+   margin-top: 12px;
+ }
+ 
+ .negativeNumberTriangle {
+   color: red;
+   transform: rotate(315deg);
+   font-size: 12px;
+   display: inline-block;
+ }
+
+
+
+.myDisplay {
+   display: flex;
+   justify-content: center;
+   position: relative;
+ }
+ 
+ .zeroWatchlistAlert {
+   background-color:#fef3c9;
+ }
+
+ @media screen and (min-width: 768px){
+   .desktop-hidden {
+    display: none;
+   }
+ }
+
+ .cursorToPointer {
+   cursor:pointer;
+}
