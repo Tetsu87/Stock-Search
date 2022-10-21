@@ -10,9 +10,9 @@ https://stock-trading-angular-2.wl.r.appspot.com
 https://user-images.githubusercontent.com/88815405/161934935-3bae381f-a213-4281-81e3-4726f6505a86.mp4
 
 ## Stock Search Architecture
-HTML5, Bootstrap, and Angular on the client-side
+HTML5, Angular-Bootstrap, and Angular on the client-side
 <br>
 NodeJS/Express on the server-side
 <br>
-Google App Engine as a server
+Deployed onto Google App Engine
 
